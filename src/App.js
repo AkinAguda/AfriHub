@@ -1,4 +1,5 @@
 import './App.css';
+import "tailwindcss/dist/tailwind.css";
 
 function App() {
   return (
