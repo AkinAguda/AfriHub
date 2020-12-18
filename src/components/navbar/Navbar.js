@@ -13,7 +13,7 @@ function Navbar() {
         </h2>
       </div>
       <div className="navbar__right">
-        <a>Articles</a>
+        <a>Publications</a>
         <a>Contact</a>
         <a className="navbar__btn">Register</a>
       </div>

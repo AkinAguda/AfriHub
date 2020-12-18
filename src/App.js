@@ -1,11 +1,11 @@
 import './App.css';
 import "tailwindcss/dist/tailwind.css";
-/* import Navbar from "./components/navbar/Navbar" */
+import Navbar from "./components/navbar/Navbar" 
 
 function App() {
   return (
     <div className="md:container md:mx-auto">
-      {/* <Navbar /> */}
+      <Navbar />
     </div>
   );
 }
