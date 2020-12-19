@@ -1,12 +1,18 @@
-import './App.css';
+import "./App.css";
 import "tailwindcss/dist/tailwind.css";
-import Navbar from "./components/navbar/Navbar" 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./screens/homepage/HomePage";
 
 function App() {
   return (
-    <div className="md:container md:mx-auto">
-      <Navbar />
-    </div>
+    <Router>
+      <Switch>
+        <div className="md:container md:mx-auto">
+          {/* Public Routes */}
+          <Route exact path="/" component={HomePage} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
