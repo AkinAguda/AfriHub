@@ -13,9 +13,17 @@ function Navbar() {
         </h2>
       </div>
       <div className="navbar__right">
-        <a>Publications</a>
-        <a>Contact</a>
-        <a className="navbar__btn">Register</a>
+        <Link to="/publication">
+          <a href>Publications</a>
+        </Link>
+        <Link to="/contact">
+          <a href>Contact</a>
+        </Link>
+        <Link to="/register" className="navbar__btn">
+          <a className="navbar__btn" href>
+            Register
+          </a>
+        </Link>
       </div>
     </div>
   );
