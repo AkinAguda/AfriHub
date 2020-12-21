@@ -7,6 +7,10 @@ import Girlie from "../../assets/images/Rectangle 2.png";
 import Read from "../../assets/svgs/Ellipse 7.svg";
 import Download from "../../assets/svgs/Ellipse 8.svg";
 import Submit from "../../assets/svgs/Ellipse 9.svg";
+import Maria from "../../assets/images/Rectangle 8.png";
+import Tolu from "../../assets/images/Rectangle 9.png";
+import William from "../../assets/images/Rectangle 10.png";
+import Art from "../../assets/svgs/main v.svg";
 import "./HomePage.css";
 
 function HomePage() {
@@ -95,6 +99,52 @@ function HomePage() {
             Have a lovely article about an inquiriy into our native languages?
             Share with us!
           </p>
+        </div>
+      </div>
+      <div className="homepage__reviews mt-12">
+        <div className="homepage__reviewsLeft">
+          <img src={Maria} alt="Maria" className="mb-16 mr-48" />
+          <img src={Tolu} alt="Tolu" className="mb-16 ml-48" />
+          <img src={William} alt="William" className="mb-12 mr-48" />
+        </div>
+        <div className="homepage__reviewsRight">
+          <h2 className="homepage__reviewsRightTitle">
+            Amazing community interactions on Afri<span>hub</span>
+          </h2>
+          <p className="homepage__reviewsRightDesc mt-4">
+            Our vast community allows for effective feedback on your articles
+            giving you pointers and allows you to do the same to articles you
+            read. We understand the importance of efficient feedback on our
+            works and as such we are of the opinion that feed back will make you
+            a better researcher.
+          </p>
+          <Link to="/register" className="homepage__thirdbtn mt-12">
+            <a className="homepage__thirdbtn" href>
+              Register
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div className="homepage__sub">
+        <div className="sub__left">
+          <img src={Art} alt="art" />
+        </div>
+        <div className="sub__right">
+          <h2 className="sub__title">Subscribe to our Newsletter</h2>
+          <p className="sub__para mt-4">
+            To get updates on our latest additions and offers, subscribe to our
+            newsletter!
+          </p>
+          <input
+            type="text"
+            name="text"
+            id="subBtn"
+            placeholder="Enter your email address"
+          />
+          <a href type="button" className="mt-4">
+            {" "}
+            Subscribe
+          </a>
         </div>
       </div>
     </div>
