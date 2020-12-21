@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <div className="md:container md:mx-auto">
+        <div className="w-full">
           {/* Public Routes */}
           <Route exact path="/" component={HomePage} />
         </div>
