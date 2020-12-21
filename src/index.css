@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  outline: none;
 }
 
 :root {
-  --primary-color: #00BC59;
+  --primary-color: #00bc59;
   --secondary-color: #ffffff;
   --font-color: #393939;
 }
