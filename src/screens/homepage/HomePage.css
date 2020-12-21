@@ -1,7 +1,12 @@
+.homepage,
+.homepage__second,
+.homepage__third {
+  padding: 2em;
+}
+
 .homepage {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
   align-items: center;
 }
 
@@ -58,4 +63,131 @@ input {
   cursor: pointer;
   transform: rotate(360deg);
   transition: all 0.3s ease-in-out 0s;
+}
+
+.homepage__second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage__secondImg > img {
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+}
+
+.homepage__secondTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  width: 397px;
+  color: var(--font-color);
+}
+
+.homepage__secondDesc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  width: 477px;
+  color: var(--font-color);
+}
+
+.homepage__secondDesc > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em 3em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.homepage__secondDesc > .homepage__secondbtn {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  width: 197px;
+  height: 70px;
+}
+
+.homepage__secondDesc > .homepage__secondbtn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.homepage__third {
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  text-align: center;
+}
+
+.homepage__thirdTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  padding-top: 1em;
+}
+
+.homepage__thirdTitle > span {
+  color: var(--primary-color);
+}
+
+.homepage__thirdDesc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 441px;
+}
+
+.homepage__thirdOptions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.homepage__thirdOptions img {
+  margin: 0 auto;
+  padding-top: 2em;
+  cursor: pointer;
+}
+
+.homepage__thirdOptions div {
+  padding: 3em;
+}
+
+.homepage__thirdOptions h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0.4em;
+}
+
+.homepage__thirdOptions p {
+  font-style: normal;
+  font-weight: normal;
+  padding: 1em;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.homepage__thirdOne,
+.homepage__thirdTwo,
+.homepage__thirdThree {
+  margin: 1em;
+  width: 365px;
+  height: 402px;
+  background-color: #fcfcfc;
 }
