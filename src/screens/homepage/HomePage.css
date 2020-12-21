@@ -32,7 +32,7 @@
 }
 
 .homepage__input input {
-  background: #ffffff;
+  background: var(--secondary-color);
   border: 2px solid #cccccc;
   box-sizing: border-box;
   border-radius: 8px;
@@ -40,6 +40,7 @@
   height: 58px;
   font-size: 18px;
   padding: 0.5em;
+  outline: none;
 }
 
 .homepage__arrow {
