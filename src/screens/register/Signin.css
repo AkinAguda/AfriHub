@@ -1,0 +1,110 @@
+.signin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0%;
+}
+
+.signin__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+  width: 397px;
+}
+
+.signin__secondTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  width: 402px;
+  color: var(--font-color);
+}
+
+.signin__input input {
+  background: var(--secondary-color);
+  border: 2px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 549px;
+  height: 57px;
+  left: 122px;
+  font-size: 18px;
+  padding: 0.5em;
+  padding-left: 50px;
+  outline: none;
+}
+
+.signin__input > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  width: 549px;
+  height: 60px;
+  top: 713px;
+  left: 122px;
+  margin-left: 1em;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+.signin__dec {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  width: 420px;
+  height: 40px;
+  left: 187px;
+  top: 625px;
+  margin-left: 60px;
+  text-align: center;
+  color: var(--font-color);
+}
+.signin__googleButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  width: 549px;
+  left: 122px;
+  height: 60px;
+  margin-left: 1em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 8px;
+}
+
+.signin__googleButton svg {
+  margin-right: 10px;
+}
+.signin__icons {
+  position: relative;
+}
+.signin__icons svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+}
+form > div:nth-of-type(1) svg {
+  top: 20px;
+}
