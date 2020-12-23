@@ -16,9 +16,10 @@ import "./HomePage.css";
 
 function HomePage() {
   return (
+    <>
+      <Navbar />
     <div className="home">
       <div className="md:container md:mx-auto">
-        <Navbar />
         <div className="homepage">
           <div className="hompage__left">
             <h2 className="homepage__title">
@@ -154,7 +155,8 @@ function HomePage() {
       <div className="w-full mt-32">
         <Footer />
       </div>
-    </div>
+      </div>
+      </>
   );
 }
 
