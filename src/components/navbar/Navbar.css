@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2em;
 }
 
@@ -9,12 +10,13 @@
   align-items: center;
 }
 
-.navbar__left > h2 {
+.navbar__left  h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
   width: 84px;
+  padding-left: 0.2em;
 }
 
 .navbar__title > span {
