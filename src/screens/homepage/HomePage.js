@@ -27,7 +27,7 @@ function HomePage() {
             </h2>
             <p className="homepage__dec mt-4">
               At afri<span>hub</span> we offer the latest and most compelling
-              research articles on various languages in Africa.
+              research papers on various languages in Africa.
             </p>
             <div className="homepage__input mt-6">
               <input
@@ -35,7 +35,7 @@ function HomePage() {
                 name="search"
                 id="search"
                 className="mt-4"
-                placeholder="Search for article"
+                placeholder="Search for paper"
               />
               <button>Search</button>
             </div>
@@ -53,17 +53,17 @@ function HomePage() {
           </div>
           <div className="homepage__secondDesc">
             <h2 className="homepage__secondTitle">
-              Welcome to the home for research articles.
+              Welcome to the home for research papers.
             </h2>
             <p className="homepage__secondDesc mt-4">
-              Afrihub offers a large base for various articles for research on
+              Afrihub offers a large base for research papers on
               various African languages. We hold the various results of
-              inquisitions into our understanding of our languages. At Afrihub
-              we have just the right articles for you.
+              inquisitions into our understanding of our languages. Afrihub
+              has just the right African languages materials for you.
             </p>
             <Link to="/articles" className="homepage__secondbtn mt-12">
               <a className="homepage__secondbtn" href>
-                View Articles
+                View Publications
               </a>
             </Link>
           </div>
@@ -74,8 +74,8 @@ function HomePage() {
               What Can You Do On Afri<span>Hub?</span>
             </h2>
             <p className="homepage__thirdDesc mt-6">
-              AfriHub allows you access to over 100,000 articles. Here you can
-              read, download and also submit articles targeted towards research
+              AfriHub allows you access to over 100,000 research papers. Here you can
+              read, download and also submit papers targeted towards research
               of African languages.
             </p>
           </div>
@@ -85,7 +85,7 @@ function HomePage() {
             <img src={Read} alt="Read" />
             <h2>Read</h2>
             <p>
-              With over hundred thousand articles, you have access to allof
+              With over hundred thousand papers, you have access to all of
               them.
             </p>
           </div>
@@ -93,14 +93,14 @@ function HomePage() {
             <img src={Download} alt="Download" />
             <h2>Download</h2>
             <p>
-              Premium access allows you to download any articles of your choice.
+              Premium access allows you to download any papers of your choice.
             </p>
           </div>
           <div className="homepage__thirdThree">
             <img src={Submit} alt="Submit" />
             <h2>Submit</h2>
             <p>
-              Have a lovely article about an inquiriy into our native languages?
+              Have a resourceful publication about an inquiriy into our native languages?
               Share with us!
             </p>
           </div>
@@ -116,8 +116,8 @@ function HomePage() {
               Amazing community interactions on Afri<span>hub</span>
             </h2>
             <p className="homepage__reviewsRightDesc mt-4">
-              Our vast community allows for effective feedback on your articles
-              giving you pointers and allows you to do the same to articles you
+              Our vast community allows for effective feedback on your research papers
+              giving you pointers and allows you to do the same to papers you
               read. We understand the importance of efficient feedback on our
               works and as such we are of the opinion that feed back will make
               you a better researcher.
