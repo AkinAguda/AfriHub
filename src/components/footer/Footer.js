@@ -19,7 +19,7 @@ function Footer() {
             <h2 className="footer__title">afrihub</h2>
           </div>
           <p>
-            Aimed at allowing access to articles and reseources for research all
+            Aimed at allowing access to publications and reseources for research all
             over the world
           </p>
           <div className="footer__social">
@@ -51,23 +51,23 @@ function Footer() {
         <div className="footer__third">
           <h2 className="footer__thirdTitle">Languages</h2>
           <div className="links">
-            <Link to="/yoruba">
-              <a href>Yoruba</a>
+            <Link to="/swahili">
+              <a href>Swahili</a>
             </Link>
             <Link to="/igbo">
               <a href>Igbo</a>
             </Link>
-            <Link to="/edo">
-              <a href>Edo</a>
+            <Link to="/shona">
+              <a href>Shona</a>
             </Link>
-            <Link to="/english">
-              <a href>English</a>
+            <Link to="/zulu">
+              <a href>Zulu</a>
             </Link>
-            <Link to="/japanese">
-              <a href>Japanese</a>
+            <Link to="/yoruba">
+              <a href>Yoruba</a>
             </Link>
-            <Link to="/chinese">
-              <a href>Chinese</a>
+            <Link to="/xhosa">
+              <a href>Xhosa</a>
             </Link>
           </div>
         </div>
