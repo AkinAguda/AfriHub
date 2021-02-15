@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Navbar from "../../components/navbar/Navbar";
 import SignupImage from "../../assets/svgs/Group 654.svg";
 import { ReactComponent as GoogleIcon } from "../../assets/svgs/Group.svg";
@@ -6,8 +6,21 @@ import { ReactComponent as UserIcon } from "../../assets/svgs/username.svg";
 import { ReactComponent as LockIcon } from "../../assets/svgs/lock.svg";
 import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
 import "./Register.css";
+import {POST_REQUEST, APP_URL }from "../../utils/baseapi.instance"
 
 function Register() {
+  const fullName = useRef()
+  const email = useRef()
+  const password = useRef()
+  const RegisterUser = (e) => {
+    e.preventDefault()
+    const body = {
+      name: fullName.current.value,
+      email: email.current.value,
+      password: password.current.value
+    }
+    POST_REQUEST(`${APP_URL}/api/v1/authentication/signup`, body)
+  }
   return (
     <>
       <Navbar />
@@ -24,6 +37,7 @@ function Register() {
                   <div className="signup__input mt-6  signup__icons">
                     <UserIcon />
                     <input
+                      ref={fullName}
                       type="text"
                       name="fullname"
                       id="fullname"
@@ -34,6 +48,7 @@ function Register() {
                   <div className="signup__input mt-6 signup__icons">
                     <EmailIcon />
                     <input
+                      ref={email}
                       type="email"
                       id="email"
                       name="email"
@@ -43,6 +58,7 @@ function Register() {
                   <div className="signup__input mt-6  signup__icons">
                     <LockIcon />
                     <input
+                      ref={password}
                       type="password"
                       id="password"
                       name="password"
@@ -56,7 +72,7 @@ function Register() {
                   </p>
 
                   <div className="signup__input mt-6">
-                    <button>Sign Up</button>
+                    <button onClick={RegisterUser}>Sign Up</button>
                     <p className="signup__dec mt-6">OR</p>
                   </div>
                   <button className="signup__googleButton mt-4">
