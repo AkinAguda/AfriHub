@@ -15,7 +15,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="navbar__right">
-        <Link to="/articles">
+        <Link to="/publications">
           <a href>Publications</a>
         </Link>
         <Link to="/communities">

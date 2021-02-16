@@ -6,12 +6,15 @@ import { ReactComponent as UserIcon } from "../../assets/svgs/username.svg";
 import { ReactComponent as LockIcon } from "../../assets/svgs/lock.svg";
 import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
 import "./Register.css";
-import {POST_REQUEST, APP_URL }from "../../utils/baseapi.instance"
+import {  APP_URL, instance} from "../../utils/baseapi.instance"
+
 
 function Register() {
+
   const fullName = useRef()
   const email = useRef()
   const password = useRef()
+
   const RegisterUser = (e) => {
     e.preventDefault()
     const body = {
@@ -19,7 +22,17 @@ function Register() {
       email: email.current.value,
       password: password.current.value
     }
-    POST_REQUEST(`${APP_URL}/api/v1/authentication/signup`, body)
+    
+    instance.post(`${APP_URL}/api/v1/authentication/signup`, body) 
+      .then(res => {
+        if (res.status >= 200) {
+          alert(res.data.message)
+          window.location.assign('/signin')
+        }
+      })
+      .catch(e => {
+      return e
+    })
   }
   return (
     <>
