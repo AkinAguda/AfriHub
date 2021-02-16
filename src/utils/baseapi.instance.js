@@ -7,7 +7,7 @@ export const API_HEADERS = {
 	Authorization: `Bearer ${AUTH_TOKEN}`,
 };
 
-const instance = axios.create({
+export const instance = axios.create({
 	baseURL: APP_URL,
 	...(AUTH_TOKEN && {
 		headers: API_HEADERS,
