@@ -5,23 +5,26 @@ import Footer from "../../components/footer/Footer";
 
 
 const Journals = () => {
-    const [journals, setJournals] = useState([])
-    // const j = []
+    const [journals, setJournals] = useState([]);
+    const j = [];
   
     useEffect(() => {
-        instance.get(`${APP_URL}/api/v1/journals`) 
-        .then(res => {
-            if (res.status >= 200) {
-                setJournals(res.data.data)
-      
-                console.log(journals)
-                
-          }
-        })
-        .catch(e => {
-        return e
-      })
-    }, [journals])
+        const getJournals = () => {
+            instance.get(`${APP_URL}/api/v1/journals`) 
+            .then(res => {
+                if (res.status >= 200) {
+                    setJournals(res.data.data)
+          
+                    console.log(journals)
+                    
+              }
+            })
+            .catch(e => {
+            return e
+          });
+        };
+        getJournals();
+    }, []);
 
     return (
         <>
