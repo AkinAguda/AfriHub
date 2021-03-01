@@ -1,5 +1,4 @@
 import React, {useRef} from "react";
-import Navbar from "../../components/navbar/Navbar";
 import SignupImage from "../../assets/svgs/Group 654.svg";
 import { ReactComponent as GoogleIcon } from "../../assets/svgs/Group.svg";
 import { ReactComponent as LockIcon } from "../../assets/svgs/lock.svg";
@@ -34,7 +33,7 @@ function Signin() {
   }
   return (
     <>
-      <Navbar />
+      
       <div className="signin">
         <div className="md:container md:mx-auto">
           <div className="signin">
